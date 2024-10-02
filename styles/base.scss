@@ -1,24 +1,24 @@
 /* Reiknum stærð á öllum boxum sem border-box */
 html {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 /* og látum erfast á allt */
 *,
-*:before,
-*:after {
-    box-sizing: inherit;
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 /* hjálpar class sem felur sjónrænt en skjálesarar lesa */
-.sr-only:not(:focus):not(:active) {
-    clip: rect(0 0 0 0);
-    clip-path: inset(50%);
-    height: 1px;
-    overflow: hidden;
-    position: absolute;
-    white-space: nowrap;
-    width: 1px;
+.sr-only:not(:focus, :active) {
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
 }
 
 
@@ -27,7 +27,7 @@ html,
 input,
 select,
 button {
-    font-family: var(--font-family-base);
+  font-family: var(--font-family-base);
 }
 
 /*** Allar fyrirsagnir nota Matemasie regular ***/
@@ -35,20 +35,20 @@ h1,
 h2,
 h3,
 legend {
-    font-family: var(--font-family-heading);
+  font-family: var(--font-family-heading);
 }
 
 /** Lætur myndir aldrei taka meira pláss en foreldri skilgreinir **/
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 /** Litur á hlekkjum erfist frá foreldri **/
 a {
-    color: inherit;
+  color: inherit;
 }
 
 /** „Til baka á forsíðu“ hlekkur **/
 .back {
-    margin-top: var(--spacing);
+  margin-top: var(--spacing);
 }

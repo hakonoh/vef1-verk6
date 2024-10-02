@@ -548,7 +548,7 @@ fieldset textarea {
   background-color: var(--color-background-form);
 }
 
-fieldset input[type="checkbox"] {
+fieldset input[type='checkbox'] {
   display: inline-block;
   margin-right: calc(var(--spacing) * 0.5);
   width: auto;
